@@ -41,7 +41,7 @@ export default function ComingSoonHero() {
 
         {/* Description */}
         <p className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 font-light leading-relaxed ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-          <strong>Luxebymo</strong> is crafting the future of <strong>affordable luxury fashion</strong>. Prepare to experience sophistication redefined, where heritage meets innovation.
+          <span className="font-light italic text-accent">Luxebymo</span> is crafting the future of <strong>affordable luxury fashion</strong>. Prepare to experience sophistication redefined, where heritage meets innovation.
         </p>
 
         {/* CTA */}

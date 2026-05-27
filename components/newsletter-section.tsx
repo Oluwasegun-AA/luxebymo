@@ -48,7 +48,7 @@ export default function NewsletterSection() {
           Be Among the First
         </h2>
         <p className={`text-lg font-light opacity-90 mb-12 max-w-2xl mx-auto ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-          Subscribe to our exclusive mailing list and receive early access to Luxebymo's inaugural collection.
+          Subscribe to our exclusive mailing list and receive early access to <span className="font-light italic">Luxebymo</span>'s inaugural collection.
         </p>
 
         {/* Newsletter Form */}
