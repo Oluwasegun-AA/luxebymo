@@ -120,7 +120,7 @@ export default function PreviewSection() {
             Where Heritage Meets Innovation
           </h3>
           <p className="text-muted-foreground font-light leading-relaxed">
-            Every piece in the Luxebymo collection is a testament to meticulous attention to detail and an unwavering commitment to quality. Our artisans blend traditional techniques with contemporary design, creating timeless pieces that transcend trends.
+            Every piece in the <span className="italic text-accent">Luxebymo</span> collection is a testament to meticulous attention to detail and an unwavering commitment to quality. Our artisans blend traditional techniques with contemporary design, creating timeless pieces that transcend trends.
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl font-light tracking-widest uppercase">LUXEBYMO</span>
+            <span className="text-2xl font-light tracking-[0.15em] uppercase transition-smooth hover:opacity-80" style={{ letterSpacing: '0.2em' }}>LUXEBYMO</span>
           </div>
 
           {/* Desktop Navigation */}
