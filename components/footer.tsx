@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-light tracking-widest uppercase mb-4">LUXEBYMO</h3>
+            <h3 className="font-light tracking-widest uppercase mb-4">LUXEBYMO</h3>
             <p className="text-sm opacity-70 font-light">
               Redefining luxury for the modern world.
             </p>
