@@ -1,15 +1,10 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function PreviewSection() {
-  const [isLoaded, setIsLoaded] = useState(false);
   const sectionRef = useRef(null);
   const elementsRef = useRef<(HTMLElement | null)[]>([]);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

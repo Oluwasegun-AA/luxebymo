@@ -2,17 +2,12 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState('');
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,15 +39,15 @@ export default function NewsletterSection() {
   return (
     <section id="contact" className="w-full py-20 md:py-32 bg-primary text-primary-foreground">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className={`text-4xl md:text-5xl font-light tracking-tight mb-6 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.1s' }} suppressHydrationWarning>
+        <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           Be Among the First
         </h2>
-        <p className={`text-lg font-light opacity-90 mb-12 max-w-2xl mx-auto ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }} suppressHydrationWarning>
+        <p className="text-lg font-light opacity-90 mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           Subscribe to our exclusive mailing list and receive early access to <span className="font-light italic">Luxebymo</span>'s inaugural collection.
         </p>
 
         {/* Newsletter Form */}
-        <form onSubmit={handleSubmit} className={`max-w-md mx-auto flex flex-col sm:flex-row gap-3 ${isLoaded ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }} suppressHydrationWarning>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3 animate-scale-in" style={{ animationDelay: '0.3s' }}>
           <Input
             type="email"
             placeholder="Enter your email"
@@ -78,7 +73,7 @@ export default function NewsletterSection() {
           </p>
         )}
 
-        <p className={`text-xs opacity-70 mt-6 font-light transition-smooth ${isLoaded ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }} suppressHydrationWarning>
+        <p className="text-xs opacity-70 mt-6 font-light transition-smooth animate-fade-in" style={{ animationDelay: '0.4s' }}>
           We respect your privacy. Unsubscribe at any time.
         </p>
       </div>
